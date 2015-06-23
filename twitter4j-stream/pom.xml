@@ -3,7 +3,7 @@
 
     <groupId>org.twitter4j</groupId>
     <artifactId>twitter4j-stream</artifactId>
-    <version>4.0.4-SNAPSHOT</version>
+    <version>4.0.5-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>twitter4j-stream</name>
     <description>A Java library for the Twitter API</description>
@@ -17,10 +17,11 @@
     </licenses>
     <scm>
         <url>https://github.com/yusuke/twitter4j</url>
-        <connection>scm:git:git@github.com:yusuke/twitter4j.git</connection>
-        <developerConnection>scm:git:git@github.com:yusuke/twitter4j.git
+        <connection>scm:git:git://github.com/yusuke/twitter4j.git</connection>
+        <developerConnection>scm:gigit://github.com/yusuke/twitter4j.gitit
         </developerConnection>
-    </scm>
+
+  </scm>
     <developers>
         <developer>
             <id>yusuke</id>
@@ -44,7 +45,7 @@
             <id>sonatype-nexus-staging</id>
             <name>Nexus Release Repository</name>
             <uniqueVersion>false</uniqueVersion>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
             </url>
         </repository>
         <snapshotRepository>
@@ -96,12 +97,12 @@
         <dependency>
             <groupId>org.twitter4j</groupId>
             <artifactId>twitter4j-core</artifactId>
-            <version>4.0.4-SNAPSHOT</version>
+            <version>4.0.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.twitter4j</groupId>
             <artifactId>twitter4j-async</artifactId>
-            <version>4.0.4-SNAPSHOT</version>
+            <version>4.0.5-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
         <dependency>

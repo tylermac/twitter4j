@@ -138,11 +138,13 @@ public interface Status extends Comparable<Status>, TwitterResponse,
 
     /**
      * @since Twitter4J 2.0.10
+     * @return if the status is retweet or not
      */
     boolean isRetweet();
 
     /**
      * @since Twitter4J 2.1.0
+     * @return retweeted status
      */
     Status getRetweetedStatus();
 
@@ -150,6 +152,7 @@ public interface Status extends Comparable<Status>, TwitterResponse,
      * Returns an array of contributors, or null if no contributor is associated with this status.
      *
      * @since Twitter4J 2.2.3
+     * @return contributors
      */
     long[] getContributors();
 
@@ -210,4 +213,20 @@ public interface Status extends Comparable<Status>, TwitterResponse,
      *  @since Twitter4j 4.0.3
      */
     String[] getWithheldInCountries();
+
+    /**
+     * Returns the Tweet ID of the quoted Tweet
+     *
+     * @return the Tweet ID of the quoted Tweet
+     * @since Twitter4J 4.0.4
+     */
+    long getQuotedStatusId();
+
+    /**
+     * Returns the Tweet object of the original Tweet that was quoted.
+     *
+     * @return the quoted Tweet object
+     * @since Twitter4J 4.0.4
+     */
+    Status getQuotedStatus();
 }
